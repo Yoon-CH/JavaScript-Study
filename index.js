@@ -1,40 +1,15 @@
-const title = document.querySelector(".hello h1");
+const logInInput = document.querySelector(".login-form input");
 
-console.dir(title);
+// 밑의 코드들은 HTML 고유 기능으로 대체 가능.
+// const logInButton = document.querySelector(".login-form button");
 
-function handleTitleClick() {
-  title.classList.toggle("active");
-}
+// function handleLogInBtnClick() {
+//   const userName = logInInput.value;
+//   if (userName === "") {
+//     alert("Please write your name");
+//   } else if (userName.length > 15) {
+//     alert("your name is too long");
+//   }
+// }
 
-function handleMouseEnter() {
-  title.innerText = "마우스 여기있다";
-}
-
-function handleMouseLeave() {
-  title.innerText = "마우스 여기없다";
-}
-
-function handleWindowResize() {
-  document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy() {
-  alert("copier!");
-}
-
-function handleWindowOffline() {
-  alert("SOS no WIFI");
-}
-
-function handleWindowOnline() {
-  alert("ALL GOOD");
-}
-
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+// logInButton.addEventListener("click", handleLogInBtnClick);
