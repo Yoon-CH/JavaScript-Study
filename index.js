@@ -1,15 +1,17 @@
+const logInForm = document.querySelector(".login-form");
 const logInInput = document.querySelector(".login-form input");
+const link = document.querySelector("a");
 
-// 밑의 코드들은 HTML 고유 기능으로 대체 가능.
-// const logInButton = document.querySelector(".login-form button");
+function onLogInSubmit(event) {
+  const userName = logInInput.value;
+  event.preventDefault();
+  console.log(userName);
+}
 
-// function handleLogInBtnClick() {
-//   const userName = logInInput.value;
-//   if (userName === "") {
-//     alert("Please write your name");
-//   } else if (userName.length > 15) {
-//     alert("your name is too long");
-//   }
-// }
+function handleLinkClick(event) {
+  event.preventDefault();
+  console.dir(event);
+}
 
-// logInButton.addEventListener("click", handleLogInBtnClick);
+logInForm.addEventListener("submit", onLogInSubmit);
+link.addEventListener("click", handleLinkClick);
