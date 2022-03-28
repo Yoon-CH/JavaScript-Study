@@ -15,7 +15,7 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-  alert("no");
+  alert("No weather");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
